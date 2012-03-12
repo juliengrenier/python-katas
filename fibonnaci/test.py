@@ -1,5 +1,6 @@
+import unittest
 from unittest import TestCase
-from fibonnaci import fib
+import fib
 
 import signal
 
@@ -72,3 +73,7 @@ class FibTest(TestCase):
         self.assertEqual(
             141530751622060734789349637541611806906560581814825656065057782655897254318057662142341135314844769422903905867863877139246681886097354486547763701L
             , fib.fib(700))
+
+if __name__ == "__main__":
+    unittest.main()
+
